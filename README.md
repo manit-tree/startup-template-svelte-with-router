@@ -1,6 +1,6 @@
 # Startup Template for Svelte + Router + Vite
 
-This template should help get you started developing with Svelte in Vite quickly. It comes pre configured with SCSS and Svelte Routing (using svelte-navigator package). For more information about how to use svelte-navigator, please visit https://www.npmjs.com/package/svelte-navigator
+This template should help get you started developing with Svelte in Vite quickly. It comes pre configured with SCSS and Svelte Routing (using svelte-navigator package).
 
 ## Usages
 
@@ -24,17 +24,19 @@ npm run dev
 </script>
 
 <Router>
-	<nav>
-		<Link to="/">Home</Link>
-		<Link to="about">About</Link>
-		<Link to="contact">Contact</Link>
-	</nav>
-	<div>
+  <nav>
+    <Link to="/">Home</Link>
+    <Link to="about">About</Link>
+    <Link to="contact">Contact</Link>
+  </nav>
+  <div>
     <main>
-      <Route path="/" component={Home} />
-      <Route path="about" component={About} />
-      <Route path="contact" component="{Contact}" />
+       <Route path="/" component={Home} />
+       <Route path="about" component={About} />
+       <Route path="contact" component="{Contact}" />
     </main>
-	</div>
+  </div>
 </Router>
 ```
+
+For more information about how to use svelte-navigator, please visit https://www.npmjs.com/package/svelte-navigator
